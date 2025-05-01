@@ -20,7 +20,8 @@ export default function PostEdit() {
     try {
       const response = await api.put(`/posts/${id}`, formData);
       const { data } = response.data;
-      condole.log(data);
+      console.log(data);
+     
      
       navigate(`/posts/${id}`);
     } catch (error) {
